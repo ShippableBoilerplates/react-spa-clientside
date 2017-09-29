@@ -1,0 +1,7 @@
+{
+    "parser": "babel-eslint",
+    "extends": "@monolambda/eslint-config",
+    "rules": {
+        "no-console": "warn"
+    }
+}

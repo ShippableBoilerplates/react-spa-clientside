@@ -2,6 +2,7 @@
     "parser": "babel-eslint",
     "extends": "@monolambda/eslint-config",
     "rules": {
-        "no-console": "warn"
+        "no-console": "warn",
+        "generator-star-spacing": ["error", "after"]
     }
 }

@@ -10,7 +10,6 @@ import ReactLogo from '../../../img/react.svg'
 class Clicker extends Component {
     static propTypes = {
         updateClickCount: PropTypes.func.isRequired,
-        getChuckNorrisJoke: PropTypes.func.isRequired,
         counter: PropTypes.number.isRequired,
         joke: PropTypes.string.isRequired
     }
@@ -18,12 +17,10 @@ class Clicker extends Component {
     handleClick() {
         const {
             updateClickCount,
-            getChuckNorrisJoke,
             counter
         } = this.props
 
         updateClickCount(counter)
-        getChuckNorrisJoke()
     }
     render() {
         return (

@@ -12,7 +12,7 @@ resources/docs/private
 node_modules
 
 ## build artifacts
-./public
+public/*
 
 ## elastic beanstalk files
 .elasticbeanstalk/*

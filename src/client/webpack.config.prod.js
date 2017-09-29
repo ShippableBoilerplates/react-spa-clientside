@@ -76,7 +76,7 @@ module.exports = env => ({
     },
     plugins: [
         new CopyWebpackPlugin([
-            { from: './src/client/misc', to: './public' }
+            { from: './src/client/misc', to: './' }
         ]),
         new HtmlWebpackPlugin({
             filename: 'index.html',

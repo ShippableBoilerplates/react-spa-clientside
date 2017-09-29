@@ -80,7 +80,7 @@ module.exports = env => ({
         ]),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/client/templates/app.pug',
+            template: './src/client/templates/index.pug',
             inject: 'body'
         }),
         new webpack.DefinePlugin({

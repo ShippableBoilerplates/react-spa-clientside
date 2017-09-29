@@ -78,7 +78,7 @@ module.exports = {
             title: 'Somnolence',
             hash: true,
             filename: 'index.html',
-            template: './src/client/templates/app.pug',
+            template: './src/client/templates/index.pug',
             inject: 'body'
         }),
         new webpack.HotModuleReplacementPlugin(),

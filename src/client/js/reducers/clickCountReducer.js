@@ -1,7 +1,9 @@
 import constants from '../constants'
 
 const INITIAL_STATE = {
-    counter: 0
+    data: {
+        counter: 0
+    }
 }
 
 export default (state = INITIAL_STATE, action) => {
@@ -9,7 +11,10 @@ export default (state = INITIAL_STATE, action) => {
     case constants.UPDATE_CLICK_COUNT:
         return {
             ...state,
-            counter: state.counter + 1
+            data: {
+                ...state.data,
+                counter: action.payload + 1
+            }
         }
     default:
         return state

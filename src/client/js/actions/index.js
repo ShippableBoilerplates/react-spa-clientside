@@ -1,9 +1,10 @@
 import constants from '../constants'
 
 export default {
-    updateClickCount: (msg) => {
+    updateClickCount: (num) => {
         return {
-            type: constants.UPDATE_CLICK_COUNT
+            type: constants.UPDATE_CLICK_COUNT,
+            payload: num
         }
     }
 }

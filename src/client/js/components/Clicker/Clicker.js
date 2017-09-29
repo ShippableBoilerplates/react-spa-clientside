@@ -14,7 +14,12 @@ class Clicker extends Component {
     }
 
     handleClick() {
-        this.props.updateClickCount()
+        const {
+            updateClickCount,
+            counter
+        } = this.props
+
+        updateClickCount(counter)
     }
     render() {
         return (
@@ -35,7 +40,7 @@ class Clicker extends Component {
 
 export default connect(
     state => ({
-        counter: state.clickCount.counter
+        counter: state.clickCount.data.counter
     }),
     dispatch => bindActionCreators(actions, dispatch)
 )(Clicker)

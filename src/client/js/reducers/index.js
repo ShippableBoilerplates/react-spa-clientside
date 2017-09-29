@@ -1,5 +1,5 @@
-import clickCountReducer from './clickCountReducer'
+import dataReducer from './dataReducer'
 
 export {
-    clickCountReducer
+    dataReducer
 }

@@ -8,7 +8,6 @@ export default {
         }
     },
     getChuckNorrisJoke: (payload) => {
-        console.log(payload)
         return {
             type: constants.GET_CHUCK_NORRIS_JOKE,
             payload

@@ -44,8 +44,8 @@ class Clicker extends Component {
 
 export default connect(
     state => ({
-        counter: state.clickCount.data.counter,
-        joke: state.clickCount.data.joke
+        counter: state.root.data.counter,
+        joke: state.root.data.joke
     }),
     dispatch => bindActionCreators(actions, dispatch)
 )(Clicker)

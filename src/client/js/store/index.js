@@ -1,19 +1,21 @@
 import {applyMiddleware, createStore, combineReducers} from 'redux'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import createSagaMiddleware from 'redux-saga'
+import {dataReducer} from '../reducers'
 import rootSaga from '../sagas'
-import {clickCountReducer} from '../reducers'
 
-const rootReducer = combineReducers({
-    clickCount: clickCountReducer
-})
+export default function createStoreWithMiddleware() {
+    const rootReducer = combineReducers({
+        root: dataReducer
+    })
 
-const sagaMiddleware = createSagaMiddleware()
+    const sagaMiddleware = createSagaMiddleware()
 
-const store = createStore(
-    rootReducer,
-    composeWithDevTools(applyMiddleware(sagaMiddleware))
-)
-sagaMiddleware.run(rootSaga)
+    const store = createStore(
+        rootReducer,
+        composeWithDevTools(applyMiddleware(sagaMiddleware))
+    )
+    sagaMiddleware.run(rootSaga)
 
-export default store
+    return store
+}

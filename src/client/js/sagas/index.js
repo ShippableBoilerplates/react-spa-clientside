@@ -26,7 +26,6 @@ export function * watchClick() {
 
 // root saga
 // single entry point to start all sagas at once
-
 export default function * rootSaga() {
     yield [
         watchClick()

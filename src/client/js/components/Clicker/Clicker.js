@@ -24,7 +24,9 @@ class Clicker extends Component {
                         src={ReactLogo}
                         onClick={event => this.handleClick()}
                     />
-                    <h1 {...counter}>You split the atom {this.props.counter} times!</h1>
+                    <p {...counter}>
+                        You split the atom {this.props.counter} times!
+                    </p>
                 </div>
             </div>
         )

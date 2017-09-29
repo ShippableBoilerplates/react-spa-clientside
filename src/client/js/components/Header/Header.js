@@ -11,7 +11,9 @@ const header = css({
 
 const title = css({
     margin: '0',
-    color: '#DDDDDD'
+    color: '#DDDDDD',
+    fontWeight: 700,
+    fontSize: '2rem'
 })
 
 export default class Header extends PureComponent {

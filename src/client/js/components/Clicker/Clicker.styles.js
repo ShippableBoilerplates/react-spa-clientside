@@ -19,5 +19,6 @@ export const logo = css({
 })
 
 export const counter = css({
-    color: '#43405d'
+    color: '#43405d',
+    fontSize: '1.3rem'
 })

@@ -19,7 +19,8 @@ const devPlugins = [
         }
     ],
     [
-        'transform-runtime', {
+        'transform-runtime',
+        {
             helpers: false,
             polyfill: false,
             regenerator: true,

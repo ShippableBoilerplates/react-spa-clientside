@@ -12,7 +12,7 @@ const publicFolder = path.join(__dirname, '../../public')
 const index = path.join(publicFolder, '/index.html')
 
 /**
- * Middlewares for compression, security, logging, and serving static content
+ * Middleware for compression, security, logging, and serving static content
  */
 const app = express()
 
@@ -34,12 +34,11 @@ app.get('*', (req, res) => {
 })
 
 /**
- * @todo Add unified logging
  * @todo Add headers
  */
 
 /**
- * Listening for requests
+ * Listen for requests
  */
 app.listen(PORT, () => {
     log.notify(`Express listening on port ${PORT}`)

@@ -2,7 +2,8 @@ import constants from '../constants'
 
 const INITIAL_STATE = {
     data: {
-        counter: 0
+        counter: 0,
+        joke: ''
     }
 }
 
@@ -14,6 +15,14 @@ export default (state = INITIAL_STATE, action) => {
             data: {
                 ...state.data,
                 counter: action.payload + 1
+            }
+        }
+    case constants.GET_CHUCK_NORRIS_JOKE:
+        return {
+            ...state,
+            data: {
+                ...state.data,
+                joke: action.payload
             }
         }
     default:

@@ -4,22 +4,26 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import React, {Component} from 'react'
 
-import {app, container, logo, counter} from './Clicker.styles'
+import {app, container, logo, counter, joke} from './Clicker.styles'
 import ReactLogo from '../../../img/react.svg'
 
 class Clicker extends Component {
     static propTypes = {
         updateClickCount: PropTypes.func.isRequired,
-        counter: PropTypes.number.isRequired
+        getChuckNorrisJoke: PropTypes.func.isRequired,
+        counter: PropTypes.number.isRequired,
+        joke: PropTypes.string.isRequired
     }
 
     handleClick() {
         const {
             updateClickCount,
+            getChuckNorrisJoke,
             counter
         } = this.props
 
         updateClickCount(counter)
+        getChuckNorrisJoke()
     }
     render() {
         return (
@@ -32,6 +36,9 @@ class Clicker extends Component {
                     <p {...counter}>
                         You split the atom {this.props.counter} times!
                     </p>
+                    <p {...joke}>
+                        {this.props.joke}
+                    </p>
                 </div>
             </div>
         )
@@ -40,7 +47,8 @@ class Clicker extends Component {
 
 export default connect(
     state => ({
-        counter: state.clickCount.data.counter
+        counter: state.clickCount.data.counter,
+        joke: state.clickCount.data.joke
     }),
     dispatch => bindActionCreators(actions, dispatch)
 )(Clicker)

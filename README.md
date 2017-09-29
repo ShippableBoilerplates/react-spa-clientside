@@ -38,6 +38,7 @@ eb deploy
 TODOS:
 
 - [X] Add Boilerplate With Counter
+- [] Fetch a random Chuck Norris joke with Saga http://api.icndb.com/jokes/random
 
 - [] Add Caddy/NGINX for proxy server
 - [] Add Morgan logging

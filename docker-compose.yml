@@ -1,6 +1,26 @@
 version: '3'
 services:
-    somnolence:
+    nginx:
+        image: 'levsthings/nginx-reverse-proxy:testing'
+        links: 
+            - app:app
+        ports:
+            - '80:80'
+        networks:
+            - frontend
+        deploy:
+            replicas: 1
+            restart_policy:
+                condition: on-failure
+    app:
         build: .
         ports:
-            - 3000:3000
+            - '3000'
+        networks:
+            - frontend
+        deploy:
+            replicas: 1
+            restart_policy:
+                condition: on-failure
+networks:
+    frontend: null

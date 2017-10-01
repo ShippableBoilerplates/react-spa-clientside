@@ -42,5 +42,5 @@ app.get('*', (req, res) => {
  * Listen for requests
  */
 app.listen(PORT, () => {
-    log.notify(`Express listening on port ${PORT} in ${ENV} mode.`)
+    log.notify(`Express is listening on port ${PORT} in ${ENV} mode.`)
 })

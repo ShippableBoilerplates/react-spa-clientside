@@ -7,10 +7,10 @@ WORKDIR /somnolence
 COPY . /somnolence
 
 
-ENV PORT=8081
-EXPOSE 8081
+ENV PORT=3000
+EXPOSE 3000
 
-RUN chown node: $(pwd)
+RUN chown node: $(pwd) -R
 USER node
 
 RUN yarn install

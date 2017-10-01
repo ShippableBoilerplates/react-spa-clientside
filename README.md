@@ -22,7 +22,7 @@ docker-compose up
 Run with build flag if any of the source code is changed to update the image.
 
 ```bash
-docker-compose --build 
+docker-compose up --build 
 ```
 
 Production front-end server will be available on: `localhost:3000`

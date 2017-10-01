@@ -2,17 +2,21 @@
 
 [![Build Status](https://img.shields.io/circleci/project/github/levsthings/somnolence.svg?style=flat-square)](https://circleci.com/gh/levsthings/somnolence.svg?style=svg)
 
+## The Stack
+
+*to be written*
+
 ## Quick Usage
 
 ### Development Mode:
 
-**Install dependencies:**
+Install dependencies:
 
 ```bash
 yarn install
 ```
 
-**Run in development mode via `webpack-dev-server`**
+Run in development mode via `webpack-dev-server`
 
 ```bash
 yarn dev
@@ -22,30 +26,28 @@ yarn dev
 
 ### Production Mode:
 
-**Get your image built and run the production container:**
+Get your image built and run the production container:
 
 ```bash
 docker-compose up
 ```
 
-**Run with build flag if any of the source code is changed to update the image:**
+Run with build flag if any of the source code is changed to update the image:
 
 ```bash
 docker-compose up --build 
 ```
 
-**Front-end server will be serving on: `localhost:3000`**
+**This will spin up your app with `nginx` in front of `express` providing reverse proxy and will serve on: `localhost:80`**
+
+The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-reverse-proxy) experimental image. You can replace that with another image but you need to update your compose file.
+
 
 ### Deployment Flow With CircleCI:
 
 *to be written*
 
 ### TODOS:
-
-**Reverse Proxy:**
-- [ ] Add NGINX for proxy server
-- [ ] Publish Docker Image
-- [ ] Add it to to the stack
 
 **Deployment:**
 

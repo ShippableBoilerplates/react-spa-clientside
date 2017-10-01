@@ -1,12 +1,12 @@
 {
-  "name": "ship-react-spa-client",
+  "name": "react-spa-clientside",
   "description": "deployable react spa",
   "version": "1.0.0",
   "author": "levsthings",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/levsthings/ship-react-spa"
+    "url": "https://github.com/ShippableBoilerplates/react-spa-clientside"
   },
   "scripts": {
     "cleanup": "rimraf ./src/public/",

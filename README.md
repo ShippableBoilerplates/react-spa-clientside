@@ -2,57 +2,56 @@
 
 [![Build Status](https://img.shields.io/circleci/project/github/levsthings/somnolence.svg?style=flat-square)](https://circleci.com/gh/levsthings/somnolence.svg?style=svg)
 
-### Usage
+### Quick Usage
 
-**Development Mode**
+#### Development Mode:
 
-Install dependencies:
+**Install dependencies:**
 
 ```bash
 yarn install
 ```
 
-Run in development mode via `webpack-dev-server`
+**Run in development mode via `webpack-dev-server`**
 
 ```bash
 yarn dev
 ```
 
-`webpack-dev-server` will be serving on: `localhost:3000`
+**`webpack-dev-server` will be serving on: `localhost:3000`**
 
-**Run Production Mode**
+#### Production Mode:
 
-Get your image built and run the production container:
+**Get your image built and run the production container:**
 
 ```bash
 docker-compose up
 ```
 
-Run with build flag if any of the source code is changed to update the image:
+**Run with build flag if any of the source code is changed to update the image:**
 
 ```bash
 docker-compose up --build 
 ```
 
-Front-end server will be serving on: `localhost:3000`
+**Front-end server will be serving on: `localhost:3000`**
 
-**Manual Deployment**
+#### Deployment Flow With CircleCI:
 
-```bash
-docker build .
-
-eb deploy
-```
+*to be written*
 
 TODOS:
 
-- [x] Add Boilerplate With Counter
-- [x] Fetch a random Chuck Norris joke with Saga http://api.icndb.com/jokes/random
-
-- [ ] Add Caddy/NGINX for proxy server
-- [x] Add Morgan logging
-
+**Reverse Proxy:**
+- [ ] Add NGINX for proxy server
 - [ ] Publish Docker Image
-- [ ] Test Swarms
+- [ ] Add it to to the stack
+
+**Deployment:**
+
+- [ ] Build and publish project image in CI/CD Environment
+- [ ] Use Docker Swarm to Deploy
+
+**Docs**
 
 - [ ] Add documentation

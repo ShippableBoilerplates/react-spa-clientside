@@ -8,7 +8,7 @@ function* getChuckNorrisJokeAsync(action) {
         const joke = yield call(fetchAJoke)
         yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: joke})
     } catch (error) {
-        console.log(error)
+        yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: 'Unable to fetch a joke from the public API'})
     }
 }
 

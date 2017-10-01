@@ -92,9 +92,12 @@ module.exports = env => ({
         new webpack.optimize.UglifyJsPlugin({
             uglifyOptions: {
                 ie8: false,
-                ecma: 6,
+                ecma: 8,
                 mangle: true,
-                compress: true,
+                compress: {
+                    dead_code: true,
+                    passes: 3
+                },
                 output: {
                     comments: false,
                     beautify: false

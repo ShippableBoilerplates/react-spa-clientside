@@ -52,6 +52,12 @@ docker-compose up --build
 - [ ] Build and publish project image in CI/CD Environment
 - [ ] Use Docker Swarm to Deploy
 
+**Tests**
+- [ ] Add test cases for client
+- [ ] Add test cases for front-end server
+
 **Docs**
 
-- [ ] Add documentation
+- [ ] Add stack documentation
+- [ ] Add deployment documentation
+

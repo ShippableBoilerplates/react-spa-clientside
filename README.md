@@ -2,9 +2,9 @@
 
 [![Build Status](https://img.shields.io/circleci/project/github/levsthings/somnolence.svg?style=flat-square)](https://circleci.com/gh/levsthings/somnolence.svg?style=svg)
 
-### Quick Usage
+## Quick Usage
 
-#### Development Mode:
+### Development Mode:
 
 **Install dependencies:**
 
@@ -20,7 +20,7 @@ yarn dev
 
 **`webpack-dev-server` will be serving on: `localhost:3000`**
 
-#### Production Mode:
+### Production Mode:
 
 **Get your image built and run the production container:**
 
@@ -36,11 +36,11 @@ docker-compose up --build
 
 **Front-end server will be serving on: `localhost:3000`**
 
-#### Deployment Flow With CircleCI:
+### Deployment Flow With CircleCI:
 
 *to be written*
 
-TODOS:
+### TODOS:
 
 **Reverse Proxy:**
 - [ ] Add NGINX for proxy server

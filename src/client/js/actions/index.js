@@ -1,4 +1,4 @@
-import * as ACTIONS from '../constants'
+import ACTIONS from '../constants'
 
 export default {
     updateClickCount: (num) => {

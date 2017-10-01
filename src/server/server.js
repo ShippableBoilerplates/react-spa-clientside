@@ -8,7 +8,7 @@ const {log} = require('./utils')
 
 const PORT = process.env.PORT || 3000
 
-const publicFolder = path.join(__dirname, '../../public')
+const publicFolder = path.join(__dirname, '../public')
 const index = path.join(publicFolder, '/index.html')
 
 /**

@@ -1,7 +1,7 @@
 import {takeEvery} from 'redux-saga'
 import {call, put} from 'redux-saga/effects'
 import {fetchAJoke} from '../api'
-import * as ACTIONS from '../constants'
+import ACTIONS from '../constants'
 
 function* getChuckNorrisJokeAsync(action) {
     try {

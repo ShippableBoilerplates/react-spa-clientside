@@ -1,4 +1,4 @@
-import * as ACTIONS from '../constants'
+import ACTIONS from '../constants'
 
 const INITIAL_STATE = {
     data: {

@@ -6,7 +6,7 @@
 
 *to be written*
 
-## Quick Usage
+#Usage
 
 ### Development Mode:
 

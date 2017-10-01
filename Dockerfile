@@ -7,7 +7,6 @@ WORKDIR /app
 COPY . /app
 
 ENV PORT=3000
-# EXPOSE 3000
 
 RUN chown node: $(pwd) -R
 USER node

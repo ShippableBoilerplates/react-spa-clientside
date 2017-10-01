@@ -38,7 +38,9 @@ Run with build flag if any of the source code is changed to update the image:
 docker-compose up --build 
 ```
 
-**This will spin up your app with `nginx` in front of `express` providing reverse proxy and will serve on: `localhost:80`**
+This will spin up your app with `nginx` in front of `express` providing reverse proxy.
+
+**`nginx` will serve on: `localhost:80`**
 
 The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-reverse-proxy) experimental image. You can replace that with another image but you need to update your compose file.
 

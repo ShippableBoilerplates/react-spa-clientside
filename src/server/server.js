@@ -7,6 +7,7 @@ const path = require('path')
 const {log} = require('./utils')
 
 const PORT = process.env.PORT || 3000
+const ENV = process.env.NODE_ENV
 
 const publicFolder = path.join(__dirname, '../public')
 const index = path.join(publicFolder, '/index.html')
@@ -41,5 +42,5 @@ app.get('*', (req, res) => {
  * Listen for requests
  */
 app.listen(PORT, () => {
-    log.notify(`Express listening on port ${PORT}`)
+    log.notify(`Express listening on port ${PORT} in ${ENV} mode.`)
 })

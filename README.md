@@ -4,28 +4,37 @@
 
 ### Usage
 
-**Run Development Mode**
+**Development Mode**
 
-`yarn install`
-`yarn build/dev` for development mode with `webpack-dev-server`
+Install dependencies:
 
-Dev server will be available on: `localhost:3000`
+```bash
+yarn install
+```
+
+Run in development mode via `webpack-dev-server`
+
+```bash
+yarn dev
+```
+
+`webpack-dev-server` will be serving on: `localhost:3000`
 
 **Run Production Mode**
 
-Run docker-compose and get your image built and served.
+Get your image built and run the production container:
 
 ```bash
 docker-compose up
 ```
 
-Run with build flag if any of the source code is changed to update the image.
+Run with build flag if any of the source code is changed to update the image:
 
 ```bash
 docker-compose up --build 
 ```
 
-Production front-end server will be available on: `localhost:3000`
+Front-end server will be serving on: `localhost:3000`
 
 **Manual Deployment**
 
@@ -37,13 +46,13 @@ eb deploy
 
 TODOS:
 
-- [X] Add Boilerplate With Counter
-- [] Fetch a random Chuck Norris joke with Saga http://api.icndb.com/jokes/random
+- [x] Add Boilerplate With Counter
+- [x] Fetch a random Chuck Norris joke with Saga http://api.icndb.com/jokes/random
 
-- [] Add Caddy/NGINX for proxy server
-- [] Add Morgan logging
+- [ ] Add Caddy/NGINX for proxy server
+- [x] Add Morgan logging
 
-- [] Publish Docker Image
-- [] Test Swarms
+- [ ] Publish Docker Image
+- [ ] Test Swarms
 
-- [] Add documentation
+- [ ] Add documentation

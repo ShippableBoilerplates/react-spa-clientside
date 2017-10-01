@@ -3,8 +3,8 @@ LABEL maintainer=levsthings
 
 STOPSIGNAL SIGTERM
 
-WORKDIR /somnolence
-COPY . /somnolence
+WORKDIR /app
+COPY . /app
 
 ENV PORT=3000
 EXPOSE 3000

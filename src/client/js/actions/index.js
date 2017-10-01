@@ -1,15 +1,15 @@
-import constants from '../constants'
+import * as ACTIONS from '../constants'
 
 export default {
     updateClickCount: (num) => {
         return {
-            type: constants.UPDATE_CLICK_COUNT,
+            type: ACTIONS.UPDATE_CLICK_COUNT,
             payload: num
         }
     },
     getChuckNorrisJoke: (payload) => {
         return {
-            type: constants.GET_CHUCK_NORRIS_JOKE,
+            type: ACTIONS.GET_CHUCK_NORRIS_JOKE,
             payload
         }
     }

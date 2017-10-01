@@ -15,11 +15,7 @@ class Clicker extends Component {
     }
 
     handleClick() {
-        const {
-            updateClickCount,
-            counter
-        } = this.props
-
+        const {updateClickCount, counter} = this.props
         updateClickCount(counter)
     }
     render() {

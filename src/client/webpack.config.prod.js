@@ -101,5 +101,6 @@ module.exports = env => ({
                 }
             }
         })
-    ]
+    ],
+    stats: 'errors-only'
 })

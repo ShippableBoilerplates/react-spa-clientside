@@ -9,9 +9,9 @@
     "url": "https://github.com/levsthings/ship-react-spa"
   },
   "scripts": {
-    "cleanup": "rimraf public/",
-    "build/dev": "webpack-dev-server --config ./src/client/webpack.config.dev.js --progress",
-    "build/prod": "yarn cleanup && export NODE_ENV=production || SET \"NODE_ENV=production\" && webpack --config ./src/client/webpack.config.prod.js --optimize-minimize --progress",
+    "cleanup": "rimraf ./src/public/",
+    "dev": "webpack-dev-server --config ./src/client/webpack.config.dev.js --progress",
+    "build/prod": "yarn cleanup && webpack --config ./src/client/webpack.config.prod.js --optimize-minimize",
     "run/prod": "node src/server/server.js",
     "start": "yarn build/prod && yarn run/prod",
     "test": "jest",

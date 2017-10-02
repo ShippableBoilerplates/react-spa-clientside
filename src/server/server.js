@@ -1,5 +1,5 @@
 'use strict'
-const compression = require('compression')
+// const compression = require('compression')
 const express = require('express')
 const helmet = require('helmet')
 const morgan = require('morgan')
@@ -20,7 +20,7 @@ const app = express()
 app.disable('x-powered-by')
 app.use(helmet())
 app.use(morgan('tiny'))
-app.use(compression())
+// app.use(compression())
 app.use(express.static(publicFolder))
 
 /**

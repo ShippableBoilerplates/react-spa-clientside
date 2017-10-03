@@ -1,6 +1,6 @@
 <h1 align='center'>Ship A Client-Side React SPA</h1>
 
-# Boilerplate for Client-Side React SPA with a custom front-end infrastructure
+## Boilerplate for Client-Side React SPA with a custom front-end infrastructure
 
 ## Why & What?
 

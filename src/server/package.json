@@ -22,13 +22,15 @@
   "lint-staged": {
     "gitDir": "../../",
     "linters": {
-      "*{.js,json,jsx}": [
-      "yarn lint",
-      "git add"
-    ]
+      "*{.js,jsx}": [
+        "yarn lint",
+        "git add"
+      ]
+    }
   },
   "devDependencies": {
     "@monolambda/eslint-config": "^1.5.0",
+    "babel-eslint": "^8.0.1",
     "eslint": "^4.7.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.2.1",

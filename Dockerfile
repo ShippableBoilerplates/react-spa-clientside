@@ -13,7 +13,7 @@ USER node
 
 ## Switch to client directory
 WORKDIR /app/src/client
-## Install client dependencies and build the app into server/
+## Install client dependencies and build the assets into /app/server/public
 RUN yarn install && yarn build/prod
 
 ## Switch to server directory and delete the client directory

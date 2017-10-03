@@ -71,7 +71,7 @@ yarn start
 
 ### Production Mode:
 
-#### Manually (Without NGINX):
+#### Manually (without NGINX):
 
 ```bash
 cd src/client
@@ -81,7 +81,7 @@ cd ../server
 yarn start
 ```
 
-#### With Docker(Recommended):
+#### With Docker (recommended):
 
 Get your image built and run the production container:
 

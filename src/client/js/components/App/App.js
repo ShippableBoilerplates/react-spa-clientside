@@ -11,6 +11,7 @@ css.global(
         fontWeight: '400'
     }
 )
+
 const wrapper = css({
     height: '100vh',
     background: '#DDDDDD'

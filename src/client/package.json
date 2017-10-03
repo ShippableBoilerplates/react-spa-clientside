@@ -19,6 +19,15 @@
     "node": "8.6.0",
     "yarn": "1.1.0"
   },
+  "lint-staged": {
+    "gitDir": "../../",
+    "linters": {
+      "*{.js,jsx}": [
+        "yarn lint",
+        "git add"
+      ]
+    }
+  },
   "devDependencies": {
     "@monolambda/eslint-config": "^1.5.0",
     "babel-core": "^6.26.0",

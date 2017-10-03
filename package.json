@@ -14,7 +14,7 @@
     "build/prod": "yarn cleanup && webpack --config ./src/client/webpack.config.prod.js",
     "run/prod": "node src/server/server.js",
     "start": "yarn build/prod && yarn run/prod",
-    "test": "jest",
+    "test": "yarn lint",
     "lint": "eslint --fix ./src/ --color",
     "precommit": "lint-staged"
   },
@@ -26,13 +26,6 @@
     "*.js": [
       "yarn lint",
       "git add"
-    ]
-  },
-  "jest": {
-    "runner": "jest-runner-eslint",
-    "displayName": "lint",
-    "testMatch": [
-      "<rootDir>/src/**/*.{js,jsx}"
     ]
   },
   "devDependencies": {
@@ -54,8 +47,6 @@
     "html-webpack-plugin": "^2.28.0",
     "husky": "^0.14.3",
     "image-webpack-loader": "^3.4.0",
-    "jest": "^21.1.0",
-    "jest-runner-eslint": "^0.3.0",
     "lint-staged": "^4.2.1",
     "prop-types": "^15.5.10",
     "pug": "^2.0.0-rc.4",

@@ -21,9 +21,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 - Glamor as a CSS-in-JS solution.
 - Pug for generating HTML.
 
-## Usage
-
-### Getting Started
+## Getting Started
 
 - Prerequisites: `docker`, `node` and `yarn`
 
@@ -34,7 +32,7 @@ git clone https://github.com/ShippableBoilerplates/react-spa-clientside
 rm -rf .git && git init
 ```
 
-### Development Mode:
+## Development Mode:
 
 **Client:**
 
@@ -73,9 +71,9 @@ yarn start
 ```
 
 
-### Production Mode:
+## Production Mode:
 
-#### Manually (without NGINX):
+### Manually (without NGINX):
 
 ```bash
 cd src/client
@@ -85,7 +83,7 @@ cd ../server
 yarn start
 ```
 
-#### With Docker (recommended):
+### With Docker (recommended):
 
 **Get your image built and run the production container:**
 

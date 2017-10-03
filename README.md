@@ -34,7 +34,7 @@ rm -rf .git && git init
 
 ## Development Mode:
 
-## Client
+### Client
 
 ```bash
 cd src/client

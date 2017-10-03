@@ -9,9 +9,11 @@
     "url": "https://github.com/ShippableBoilerplates/react-spa-clientside"
   },
   "scripts": {
-    "cleanup": "rimraf ./src/public/",
-    "dev": "webpack-dev-server --config ./src/client/webpack.config.dev.js --progress",
-    "build/prod": "yarn cleanup && webpack --config ./src/client/webpack.config.prod.js"
+    "cleanup": "rimraf ../server/public/",
+    "dev": "webpack-dev-server --config ./webpack.config.dev.js --progress",
+    "build/prod": "yarn cleanup && webpack --config ./webpack.config.prod.js",
+    "lint": "eslint --fix ./src/ --color",
+    "test": "yarn lint"
   },
   "engines": {
     "node": "8.6.0",

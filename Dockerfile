@@ -7,18 +7,25 @@ STOPSIGNAL SIGTERM
 WORKDIR /app
 COPY . /app
 
-## Port that Nodejs is going to run
-ENV PORT=3000
-
-## Step down from root and run Nodejs as a user
+## Step down from root
 RUN chown node: $(pwd) -R
 USER node
 
-## Download dependencies
-RUN yarn install
+## Switch to client directory
+WORKDIR /app/src/client
+## Install client dependencies and build the app into server/
+RUN yarn install && yarn build/prod
+
+## Switch to server directory and delete the client directory
+WORKDIR /app/src/server
+CMD rm -rf /app/src/client
 
 ## Set node environment to production
+ENV PORT=3000
 ENV NODE_ENV=production
 
-## Run start command which will compile client assets first and then run the Nodejs server
+## Install server dependencies
+RUN yarn install
+
+## Run the server
 ENTRYPOINT yarn start

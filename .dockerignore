@@ -1,6 +1,5 @@
-src/public/
-node_modules/
+src/client/node_modules/*
+src/server/node_modules/*
+src/server/public
 .git/
 .vscode/
-.elasticbeanstalk/
-docs/

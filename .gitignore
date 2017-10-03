@@ -1,20 +1,8 @@
 ## editor settings
 .vscode
-.arch
-
-## env/secrets
-scripts/config/config.json
-
-## private docs
-resources/docs/private
 
 ## dependencies
 node_modules
 
 ## build artifacts
-src/public/*
-
-## elastic beanstalk files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
+src/server/public/*

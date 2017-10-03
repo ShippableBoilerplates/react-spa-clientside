@@ -2,13 +2,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
-const babelConfig = require('../../.babelrc.js')
+const babelConfig = require('./.babelrc.js')
 
 module.exports = {
     devtool: 'cheap-module-source-map',
     entry: {
         App: [
-            './src/client/js/index.js'
+            './js/index.js'
         ]
     },
     output: {
@@ -78,7 +78,7 @@ module.exports = {
             title: 'Somnolence',
             hash: true,
             filename: 'index.html',
-            template: './src/client/templates/index.pug',
+            template: './templates/index.pug',
             inject: 'body'
         }),
         new webpack.HotModuleReplacementPlugin(),

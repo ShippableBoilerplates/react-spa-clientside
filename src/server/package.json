@@ -1,0 +1,43 @@
+{
+  "name": "react-spa-clientside",
+  "description": "deployable react spa",
+  "version": "1.0.0",
+  "author": "levsthings",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShippableBoilerplates/react-spa-clientside"
+  },
+  "scripts": {
+    "run/prod": "node server.js",
+    "start": "yarn run/prod",
+    "test": "yarn lint",
+    "lint": "eslint --fix ./src/ --color",
+    "precommit": "lint-staged"
+  },
+  "engines": {
+    "node": "8.6.0",
+    "yarn": "1.1.0"
+  },
+  "lint-staged": {
+    "gitDir": "../../",
+    "linters": {
+      "*{.js,json,jsx}": [
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@monolambda/eslint-config": "^1.5.0",
+    "eslint": "^4.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "express": "^4.15.4",
+    "helmet": "^3.8.1",
+    "morgan": "^1.9.0"
+  }
+}

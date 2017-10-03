@@ -2,16 +2,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
-const babelConfig = require('../../.babelrc.js')
 
-module.exports = env => ({
+const babelConfig = require('./.babelrc.js')
+
+module.exports = {
     entry: {
         App: [
-            './src/client/js/index.js'
+            './js/index.js'
         ]
     },
     output: {
-        path: path.resolve(__dirname, '../public'),
+        path: path.resolve(__dirname, '../server/public'),
         publicPath: '/',
         filename: '[name].[hash].bundle.js'
     },
@@ -76,11 +77,11 @@ module.exports = env => ({
     },
     plugins: [
         new CopyWebpackPlugin([
-            { from: './src/client/misc', to: './' }
+            { from: './misc', to: './' }
         ]),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/client/templates/index.pug',
+            template: './templates/index.pug',
             inject: 'body'
         }),
         new webpack.DefinePlugin({
@@ -106,4 +107,4 @@ module.exports = env => ({
         })
     ],
     stats: 'errors-only'
-})
+}

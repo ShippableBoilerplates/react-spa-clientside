@@ -25,7 +25,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 
 - Prerequisites: `docker`, `node` and `yarn`
 
-**Clone the repo:**
+Clone the repo:
 
 ```bash
 git clone https://github.com/ShippableBoilerplates/react-spa-clientside
@@ -39,13 +39,13 @@ rm -rf .git && git init
 ```bash
 cd src/client
 ```
-**Install dependencies:**
+Install dependencies:
 
 ```bash
 yarn install
 ```
 
-**Run in development mode via `webpack-dev-server`:**
+Run in development mode via `webpack-dev-server`:
 
 ```bash
 yarn dev
@@ -58,13 +58,13 @@ yarn dev
 ```bash
 cd src/server
 ```
-**Install dependencies:**
+Install dependencies:
 
 ```bash
 yarn install
 ```
 
-**Run server locally:**
+Run server locally:
 
 ```bash
 yarn start

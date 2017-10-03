@@ -30,6 +30,11 @@ git clone https://github.com/ShippableBoilerplates/react-spa-clientside
 rm -rf .git && git init
 ```
 
+Client:
+
+```bash
+cd src/client
+```
 Install dependencies:
 
 ```bash
@@ -44,8 +49,37 @@ yarn dev
 
 **`webpack-dev-server` will be serving on: `localhost:3000`**
 
+Server:
+
+```bash
+cd src/server
+```
+Install dependencies:
+
+```bash
+yarn install
+```
+
+Run server locally:
+
+```bash
+yarn start
+```
+
 
 ### Production Mode:
+
+#### Manually (Without NGINX):
+
+```bash
+cd src/client
+yarn build/prod
+
+cd ../server
+yarn start
+```
+
+#### With Docker(Recommended):
 
 Get your image built and run the production container:
 
@@ -65,8 +99,12 @@ This will spin up your app with `nginx` in front of `express` providing reverse 
 
 The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-reverse-proxy) image. You can replace that with another image but you need to update your compose file. It's configured as a reverse proxy and forwards requests to the Node server. It does the gzipping already, and various caching methods, additional custom headers can be implemented.
 
-### Additional:
+### Additional Commands:
 
 - Run `yarn lint` for linting with auto fixing:
 - Run `yarn test` for testing. (Right now it just runs linting, you should add your test runner there.)
 - Run `yarn cleanup` to manually remove built assets.
+
+### Important Note:
+
+Pay attention to the folder you're working in. To reduce the dependencies of the servers, this project now has two seperate `package.json` in `client` and `server`.

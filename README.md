@@ -4,6 +4,8 @@
 
 This is a client-side React boilerplate with the addition of a custom front-end server.
 
+If don't need to run static files on a custom infrastructure and would just rather use a static hosting solution, use [react-spa-clientside-cdn](https://github.com/ShippableBoilerplates/react-spa-clientside-cdn) instead.
+
 ## Why & What?
 
 Most of the time, when you're building a client-side app, you can just upload your compiled static files to GitHub, Surge, S3 and be done with it. But there are some use cases where you want to run your own front-end infrastructure to have more control on how your assets are served. In this case, you can spin up a Nodejs server with NGINX in front of it to have total control of your front-end.
@@ -16,7 +18,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 - NGINX as the reverse proxy.
 - Node/Express as the front-end server.
 - React/Redux/Redux-Saga for UI.
-- Glamor as a css-in-js solution.
+- Glamor as a CSS-in-JS solution.
 - Pug for generating HTML.
 
 ## Usage

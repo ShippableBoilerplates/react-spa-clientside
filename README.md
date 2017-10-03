@@ -68,5 +68,5 @@ The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-r
 ### Additional:
 
 - Run `yarn lint` for linting with auto fixing:
-- Run `yarn test` for Jest to run your linting. (You should add your unittests there as well.)
+- Run `yarn test` for testing. (Right now it just runs linting, you should add your test runner there.)
 - Run `yarn cleanup` to manually remove built assets.

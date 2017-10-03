@@ -15,6 +15,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 - Node/Express as the front-end server.
 - React/Redux/Redux-Saga for UI.
 - Glamor as a css-in-js solution.
+- Pug for generating HTML.
 
 ## Usage
 

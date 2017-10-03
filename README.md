@@ -34,7 +34,7 @@ rm -rf .git && git init
 
 ## Development Mode:
 
-**Client:**
+## Client
 
 ```bash
 cd src/client
@@ -53,7 +53,7 @@ yarn dev
 
 `webpack-dev-server` will be serving on: `localhost:3000`
 
-**Server:**
+### Server
 
 ```bash
 cd src/server

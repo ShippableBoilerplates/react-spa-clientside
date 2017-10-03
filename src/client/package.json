@@ -1,0 +1,55 @@
+{
+  "name": "client",
+  "description": "client",
+  "version": "1.0.0",
+  "author": "levsthings",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShippableBoilerplates/react-spa-clientside"
+  },
+  "scripts": {
+    "cleanup": "rimraf ./src/public/",
+    "dev": "webpack-dev-server --config ./src/client/webpack.config.dev.js --progress",
+    "build/prod": "yarn cleanup && webpack --config ./src/client/webpack.config.prod.js"
+  },
+  "engines": {
+    "node": "8.6.0",
+    "yarn": "1.1.0"
+  },
+  "devDependencies": {
+    "@monolambda/eslint-config": "^1.5.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.1.0",
+    "eslint": "^4.7.0",
+    "eslint-loader": "^1.9.0",
+    "file-loader": "^1.1.0",
+    "glamor": "^2.20.40",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.28.0",
+    "husky": "^0.14.3",
+    "image-webpack-loader": "^3.4.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lint-staged": "^4.2.1",
+    "prop-types": "^15.5.10",
+    "pug": "^2.0.0-rc.4",
+    "pug-html-loader": "^1.1.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-saga": "^0.15.6",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}

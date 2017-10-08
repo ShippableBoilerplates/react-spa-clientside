@@ -1,6 +1,6 @@
 version: '3'
 services:
-    ## This is points to my custom NGINX image
+    ## This points to my custom NGINX image
     nginx:
         image: 'levsthings/nginx-reverse-proxy'
         links: 

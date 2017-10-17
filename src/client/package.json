@@ -16,8 +16,8 @@
     "test": "yarn lint"
   },
   "engines": {
-    "node": "8.6.0",
-    "yarn": "1.1.0"
+    "node": ">=8.6.0",
+    "yarn": ">=1.0.0"
   },
   "lint-staged": {
     "gitDir": "../../",
@@ -58,7 +58,7 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-saga": "^0.15.6",
+    "redux-saga": "^0.16.0",
     "rimraf": "^2.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"

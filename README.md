@@ -21,9 +21,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 - Glamor as a CSS-in-JS solution.
 - Pug for generating static HTML assets.
 
-## Usage
-
-### Development Mode:
+## Getting Started
 
 - Prerequisites: `docker`, `node` and `yarn`
 
@@ -34,7 +32,9 @@ git clone https://github.com/ShippableBoilerplates/react-spa-clientside
 rm -rf .git && git init
 ```
 
-Client:
+## Development Mode:
+
+### Client
 
 ```bash
 cd src/client
@@ -45,15 +45,15 @@ Install dependencies:
 yarn install
 ```
 
-Run in development mode via `webpack-dev-server`
+Run in development mode via `webpack-dev-server`:
 
 ```bash
 yarn dev
 ```
 
-**`webpack-dev-server` will be serving on: `localhost:3000`**
+`webpack-dev-server` will be serving on: `localhost:3000`
 
-Server:
+### Server
 
 ```bash
 cd src/server
@@ -71,9 +71,9 @@ yarn start
 ```
 
 
-### Production Mode:
+## Production Mode:
 
-#### Manually (without NGINX):
+### Manually (without NGINX):
 
 ```bash
 cd src/client
@@ -83,15 +83,15 @@ cd ../server
 yarn start
 ```
 
-#### With Docker (recommended):
+### With Docker (recommended):
 
-Get your image built and run the production container:
+**Get your image built and run the production container:**
 
 ```bash
 docker-compose up
 ```
 
-Run with build flag if any of the source code is changed to update the image:
+**Run with build flag if any of the source code is changed to update the image:**
 
 ```bash
 docker-compose up --build 
@@ -99,7 +99,7 @@ docker-compose up --build
 
 This will spin up your app with `nginx` in front of `express` providing reverse proxy.
 
-**`nginx` will serve on: `localhost:80`**
+`nginx` will serve on: `localhost:80`
 
 The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-reverse-proxy) image. You can replace that with another image but you need to update your compose file. It's configured as a reverse proxy and forwards requests to the Node server. It does the gzipping already, and various caching methods, additional custom headers can be implemented.
 

@@ -4,11 +4,11 @@
 
 This is a client-side React boilerplate with the addition of a custom front-end server.
 
-If don't need to run static files on a custom infrastructure and would just rather use a static hosting solution, use [react-spa-clientside-cdn](https://github.com/ShippableBoilerplates/react-spa-clientside-cdn) instead.
+If don't need to run static files on a custom infrastructure and would rather just use a static hosting solution, use [react-spa-clientside-cdn](https://github.com/ShippableBoilerplates/react-spa-clientside-cdn) instead.
 
 ## Why & What?
 
-Most of the time, when you're building a client-side app, you can just upload your compiled static files to GitHub, Surge, S3 and be done with it. But there are some use cases where you want to run your own front-end infrastructure to have more control on how your assets are served. In this case, you can spin up a Nodejs server with NGINX in front of it to have total control of your front-end.
+Most of the time, when you're building a client-side app, you can just upload your compiled static files to GitHub Pages, Surge, AWS S3/Cloudfront and be done with it. But there are some use cases where you want to run your own front-end infrastructure to have more control on how your assets are served. In this case, you can spin up a Nodejs server with NGINX in front of it to have total control of your front-end.
 
 This is an example boilerplate to demonstrate a way that it *could* be done. This one is designed with Docker in mind, running two seperate containers, one for the NGINX the other for the Node. The `docker-compose` file can satisfy your development and deployment (with Swarm) needs. The NGINX image is already built and published, all you need to do is to develop the Client SPA, package it with Node.js server and publish your custom image.
 
@@ -19,7 +19,7 @@ This is an example boilerplate to demonstrate a way that it *could* be done. Thi
 - Node/Express as the front-end server.
 - React/Redux/Redux-Saga for UI.
 - Glamor as a CSS-in-JS solution.
-- Pug for generating HTML.
+- Pug for generating static HTML assets.
 
 ## Usage
 

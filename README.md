@@ -4,7 +4,7 @@
 
 This is a client-side React boilerplate with the addition of a custom front-end server.
 
-If don't need to run static files on a custom infrastructure and would rather just use a static hosting solution, use [react-spa-clientside-cdn](https://github.com/ShippableBoilerplates/react-spa-clientside-cdn) instead.
+If you don't need to run your client-side application on a custom infrastructure and would rather just use a static hosting solution, use [react-spa-clientside-cdn](https://github.com/ShippableBoilerplates/react-spa-clientside-cdn) instead.
 
 ## Why & What?
 

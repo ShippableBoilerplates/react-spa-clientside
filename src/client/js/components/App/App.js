@@ -4,6 +4,7 @@ import Clicker from '../Clicker/Clicker'
 
 import {css} from 'glamor'
 import 'glamor/reset'
+import {wrapper} from './App.styles'
 
 css.global(
     'html', {
@@ -11,11 +12,6 @@ css.global(
         fontWeight: '400'
     }
 )
-
-const wrapper = css({
-    height: '100vh',
-    background: '#DDDDDD'
-})
 
 export default class App extends PureComponent {
     render() {

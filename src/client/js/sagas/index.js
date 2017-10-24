@@ -1,18 +1,20 @@
-import {takeEvery} from 'redux-saga'
-import {call, put} from 'redux-saga/effects'
+import {call, put, takeEvery} from 'redux-saga/effects'
 import {fetchAJoke} from '../api'
 import ACTIONS from '../constants'
 
-function* getChuckNorrisJokeAsync(action) {
+export function* getChuckNorrisJokeAsync() {
     try {
-        const joke = yield call(fetchAJoke)
-        yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: joke})
+        const apiCall = yield call(fetchAJoke)
+        if (apiCall.status === 200) {
+            const data = yield apiCall.json()
+            yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: data.joke.fact})
+        }
     } catch (error) {
         yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: 'Unable to fetch a joke from the public API'})
     }
 }
 
-function* watchClick() {
+export function* watchClick() {
     yield takeEvery(ACTIONS.UPDATE_CLICK_COUNT, getChuckNorrisJokeAsync)
 }
 

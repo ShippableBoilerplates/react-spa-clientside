@@ -7,7 +7,7 @@ import React, {Component} from 'react'
 import {app, container, logo, counter, joke} from './Clicker.styles'
 import ReactLogo from '../../../img/react.svg'
 
-class Clicker extends Component {
+export class Clicker extends Component {
     static propTypes = {
         updateClickCount: PropTypes.func.isRequired,
         counter: PropTypes.number.isRequired,

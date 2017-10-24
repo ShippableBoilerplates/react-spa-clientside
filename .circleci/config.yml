@@ -15,7 +15,7 @@ jobs:
             - save_cache:
                 key: 'yarn-cache-{{ checksum "src/client/yarn.lock" }}'
                 paths:
-                    - src/client/node_modules
+                    - node_modules
             - run:
                 name: get coveralls
                 command: yarn global add coveralls

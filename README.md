@@ -83,6 +83,8 @@ cd ../server
 yarn start
 ```
 
+The compiled assets will be in the src/server/public folder. The server is configured to serve these assets once you run the above commands.
+
 ### With Docker (recommended):
 
 **Get your image built and run the production container:**
@@ -106,7 +108,7 @@ The `nginx` image is a [custom](https://github.com/ShippableBoilerplates/nginx-r
 ### Additional Commands:
 
 - Run `yarn lint` for linting with auto fixing:
-- Run `yarn test` for testing. (Right now it just runs linting, you should add your test runner there.)
+- Run `yarn test` for testing the client-side application.
 - Run `yarn cleanup` to manually remove built assets.
 
 ### Important Note:

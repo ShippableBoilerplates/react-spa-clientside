@@ -24,8 +24,9 @@ jobs:
                 name: lint, test and report coverage
                 command: yarn test && cat ./coverage/lcov.info | coveralls
                 working_directory: src/client
-            - run:
-                name: build client-side assets
-                command: yarn build
+            # - run:
+            #    name: build client-side assets
+            #    command: yarn build
+            #    working_directory: src/client
             # todo: change back to root dir
             # todo: build and push to image registry

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  data-css-p5ucwd=""
+>
+  <h1
+    data-css-7u1zcn=""
+  >
+    Ship a React SPA!
+  </h1>
+</div>
+`;

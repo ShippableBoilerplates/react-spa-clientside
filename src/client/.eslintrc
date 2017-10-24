@@ -1,6 +1,10 @@
 {
     "extends": "@monolambda/eslint-config",
+    "plugins": ["jest"],
     "rules": {
         "no-console": "warn"
+    },
+    "env": {
+        "jest/globals": true
     }
 }

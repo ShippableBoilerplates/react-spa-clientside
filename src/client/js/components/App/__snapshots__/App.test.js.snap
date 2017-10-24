@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<div
+  data-css-1ak43c1=""
+>
+  <Header />
+  <Connect(Clicker) />
+</div>
+`;

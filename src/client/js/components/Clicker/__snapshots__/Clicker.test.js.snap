@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Clicker component correctly 1`] = `
+<div
+  data-css-1duqoor=""
+>
+  <div
+    data-css-1gqc584=""
+  >
+    <img
+      data-css-pi5t0l=""
+      onClick={[Function]}
+      src="react.svg"
+    />
+    <p
+      data-css-1khb4zr=""
+    >
+      You split the atom 
+      0
+       times!
+    </p>
+    <p
+      data-css-x7041l=""
+    />
+  </div>
+</div>
+`;

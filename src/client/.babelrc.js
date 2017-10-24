@@ -6,9 +6,7 @@ const presets = [
                 browsers: ['last 2 versions']
             }
         }
-    ],
-    'react',
-    'stage-2',
+    ]
 ]
 
 const devPlugins = [
@@ -26,7 +24,9 @@ const devPlugins = [
             regenerator: true,
             moduleName: 'babel-runtime'
         }
-    ]
+    ],
+    'transform-class-properties',
+    'transform-react-jsx'
 ]
 
 const prodPlugins = [

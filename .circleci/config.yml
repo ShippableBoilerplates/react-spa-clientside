@@ -6,7 +6,7 @@ jobs:
         working_directory: ~/repo
         steps:
             - checkout
-            - command: cd src/client
+            - run: cd src/client
             - restore_cache:
                 key: 'yarn-cache-{{ checksum "yarn.lock" }}'
             - run: yarn install --no-progress
@@ -18,5 +18,5 @@ jobs:
             - run: yarn lint
             - run: yarn test && cat ./coverage/lcov.info | coveralls
             - run: yarn build
-            - command: cd ../..
+            - run: cd ../..
             # todo: build and push to image registry

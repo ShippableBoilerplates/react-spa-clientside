@@ -9,5 +9,5 @@ const config = {
 }
 
 export default function fetchAjoke() {
-    return fetch('https://0hg1zwamn6.execute-api.us-east-2.amazonaws.com/production/random-fact', config)
+    return fetch('https://chuck.boilerplate.space/random-fact', config)
 }

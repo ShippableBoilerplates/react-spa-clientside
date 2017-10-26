@@ -1,3 +1,5 @@
+# You can use the following CircleCI recipe for CI/CD.
+# Just make sure that Circle is watching your repo.
 version: 2
 jobs:
     build:
@@ -16,10 +18,12 @@ jobs:
                 key: 'yarn-cache-{{ checksum "src/client/yarn.lock" }}'
                 paths:
                     - node_modules
+            # You remove the next `run` block if you don't have coveralls integrated.
             - run:
                 name: get coveralls
                 command: yarn global add coveralls
                 working_directory: src/client
+            # You change the below command to `run: yarn lint && yarn test` if you don't have coveralls integrated.
             - run: 
                 name: lint, test and report coverage
                 command: yarn lint && yarn test && cat ./coverage/lcov.info | coveralls

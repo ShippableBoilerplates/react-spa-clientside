@@ -1,5 +1,3 @@
 import dataReducer from './dataReducer'
 
-export {
-    dataReducer
-}
+export {dataReducer}

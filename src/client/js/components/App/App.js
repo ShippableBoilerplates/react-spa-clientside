@@ -6,12 +6,10 @@ import {css} from 'glamor'
 import 'glamor/reset'
 import {wrapper} from './App.styles'
 
-css.global(
-    'html', {
-        fontFamily: 'Roboto, sans-serif',
-        fontWeight: '400'
-    }
-)
+css.global('html', {
+    fontFamily: 'Roboto, sans-serif',
+    fontWeight: '400'
+})
 
 export default class App extends PureComponent {
     render() {

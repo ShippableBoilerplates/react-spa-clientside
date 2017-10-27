@@ -11,7 +11,8 @@ test('Should setup updateClickCount action', () => {
 })
 
 test('Should setup getChuckNorrisJoke action', () => {
-    const payload = 'When Chuck Norris was born he drove his mom home from the hospital.'
+    const payload =
+        'When Chuck Norris was born he drove his mom home from the hospital.'
     const result = action.getChuckNorrisJoke(payload)
     expect(result).toEqual({
         type: ACTIONS.GET_CHUCK_NORRIS_JOKE,

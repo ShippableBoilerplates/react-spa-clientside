@@ -7,10 +7,16 @@ export function* getChuckNorrisJokeAsync() {
         const apiCall = yield call(fetchAJoke)
         if (apiCall.status === 200) {
             const data = yield apiCall.json()
-            yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: data.joke.fact})
+            yield put({
+                type: ACTIONS.GET_CHUCK_NORRIS_JOKE,
+                payload: data.joke.fact
+            })
         }
     } catch (error) {
-        yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: 'Unable to fetch a joke from the public API'})
+        yield put({
+            type: ACTIONS.GET_CHUCK_NORRIS_JOKE,
+            payload: 'Unable to fetch a joke from the public API'
+        })
     }
 }
 
@@ -19,7 +25,5 @@ export function* watchClick() {
 }
 
 export default function* rootSaga() {
-    yield [
-        watchClick()
-    ]
+    yield [watchClick()]
 }

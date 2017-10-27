@@ -7,7 +7,10 @@ import ACTIONS from '../constants'
 test('an update click should trigger async saga', () => {
     const gen = watchClick()
     const nextStep = gen.next(ACTIONS.UPDATE_CLICK_COUNT).value
-    const expectedYield = takeEvery(ACTIONS.UPDATE_CLICK_COUNT, getChuckNorrisJokeAsync)
+    const expectedYield = takeEvery(
+        ACTIONS.UPDATE_CLICK_COUNT,
+        getChuckNorrisJokeAsync
+    )
 
     expect(nextStep).toEqual(expectedYield)
 })

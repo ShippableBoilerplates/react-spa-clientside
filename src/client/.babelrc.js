@@ -36,9 +36,7 @@ const prodPlugins = [
         {
             mode: 'remove',
             removeImport: true,
-            ignoreFileNames: [
-                'node_modules'
-            ]
+            ignoreFileNames: ['node_modules']
         }
     ]
 ]

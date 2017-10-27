@@ -7,9 +7,7 @@ const babelConfig = require('./.babelrc.js')
 
 module.exports = {
     entry: {
-        App: [
-            './js/index.js'
-        ]
+        App: ['./js/index.js']
     },
     output: {
         path: path.resolve(__dirname, '../server/public'),
@@ -76,9 +74,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([
-            { from: './misc', to: './' }
-        ]),
+        new CopyWebpackPlugin([{from: './misc', to: './'}]),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './templates/index.pug',

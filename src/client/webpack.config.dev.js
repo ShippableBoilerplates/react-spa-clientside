@@ -7,9 +7,7 @@ const babelConfig = require('./.babelrc.js')
 module.exports = {
     devtool: 'cheap-module-source-map',
     entry: {
-        App: [
-            './js/index.js'
-        ]
+        App: ['./js/index.js']
     },
     output: {
         path: path.resolve(__dirname, '/'),

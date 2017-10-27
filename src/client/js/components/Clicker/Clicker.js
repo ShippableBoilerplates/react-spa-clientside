@@ -22,16 +22,15 @@ export class Clicker extends Component {
         return (
             <div {...app}>
                 <div {...container}>
-                    <img {...logo}
+                    <img
+                        {...logo}
                         src={ReactLogo}
                         onClick={event => this.handleClick()}
                     />
                     <p {...counter}>
                         You split the atom {this.props.counter} times!
                     </p>
-                    <p {...joke}>
-                        {this.props.joke}
-                    </p>
+                    <p {...joke}>{this.props.joke}</p>
                 </div>
             </div>
         )

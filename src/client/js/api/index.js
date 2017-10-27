@@ -1,5 +1,3 @@
 import fetchAJoke from './fetchAJoke'
 
-export {
-    fetchAJoke
-}
+export {fetchAJoke}

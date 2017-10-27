@@ -1,20 +1,13 @@
 {
-    "snapshotSerializers": [
-        "enzyme-to-json/serializer"
-    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "transform": {
         "\\.(js)$": "<rootDir>/.jestTransformer.js",
-        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jestTransformer.js",
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+            "<rootDir>/.jestTransformer.js",
         "\\.(css|less|sass|scss)$": "<rootDir>/.jestTransformer.js"
     },
-    "setupFiles": [
-        "raf/polyfill",
-        "<rootDir>/.setupTests.js"
-    ],
+    "setupFiles": ["raf/polyfill", "<rootDir>/.setupTests.js"],
     "collectCoverageFrom": ["js/**/*.{js|jsx}", "!js/**/*.styles.js"],
     "coverageDirectory": "<rootDir>/coverage/",
-    "modulePaths": [
-        "<rootDir>/src",
-        "<rootDir>/node_modules"
-    ]
+    "modulePaths": ["<rootDir>/src", "<rootDir>/node_modules"]
 }

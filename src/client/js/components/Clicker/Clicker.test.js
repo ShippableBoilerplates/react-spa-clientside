@@ -7,11 +7,8 @@ let updateClickCount, wrapper
 beforeEach(() => {
     updateClickCount = jest.fn()
     wrapper = shallow(
-        <Clicker
-            updateClickCount={updateClickCount}
-            counter={0}
-            joke={''}
-        />)
+        <Clicker updateClickCount={updateClickCount} counter={0} joke={''} />
+    )
 })
 
 test('should render Clicker component correctly', () => {

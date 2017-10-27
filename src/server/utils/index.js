@@ -10,5 +10,5 @@ exports.log = {
 }
 
 exports.parse = {
-    json: (source, encoding) => JSON.parse((fs.readFileSync(source, encoding)))
+    json: (source, encoding) => JSON.parse(fs.readFileSync(source, encoding))
 }

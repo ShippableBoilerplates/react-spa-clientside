@@ -2,7 +2,7 @@
 
 [![CircleCI](https://img.shields.io/circleci/project/github/ShippableBoilerplates/react-spa-clientside.svg?style=flat-square)](https://circleci.com/gh/ShippableBoilerplates/react-spa-clientside)
 [![Coveralls](https://img.shields.io/coveralls/ShippableBoilerplates/react-spa-clientside.svg?style=flat-square)](https://coveralls.io/github/ShippableBoilerplates/react-spa-clientside)
-[![license](https://img.shields.io/github/license/ShippableBoilerplates/react-spa-clientside.svg?style=flat-square)](https://img.shields.io/github/license/ShippableBoilerplates/react-spa-clientside)
+[![license](https://img.shields.io/badge/license-MIT%20License-blue.svg?style=flat-square)]()
 [![Style](https://img.shields.io/badge/code%20style-standard%2F4-ff69b4.svg?style=flat-square)]()
 
 ## Introduction

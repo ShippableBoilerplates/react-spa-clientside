@@ -1,5 +1,5 @@
 {
-    "name": "client",
+    "name": "react-spa-clientside",
     "description": "client",
     "version": "1.0.0",
     "author": "levsthings",
@@ -12,8 +12,7 @@
         "precommit": "lint-staged",
         "cleanup": "rimraf ../server/public/",
         "dev": "webpack-dev-server --config ./webpack.config.dev.js --progress",
-        "build/prod":
-            "yarn cleanup && webpack --config ./webpack.config.prod.js",
+        "build/prod": "yarn cleanup && webpack --config ./webpack.config.prod.js",
         "lint": "eslint --fix ./src/ --color",
         "test": "jest --config=.jest.config.json --coverage",
         "test/watch": "jest --config=.jest.config.json --watchAll"
